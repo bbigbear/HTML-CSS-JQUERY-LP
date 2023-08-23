@@ -190,7 +190,7 @@ body {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   body {
     font-size: 1.4em;
   }
@@ -227,7 +227,7 @@ svg {
 ++++++++++++++++++++++++++++++++++++++++ */
 
 /* display control ++++++++++++++++ */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .l-disp-none-pc {
     display: block !important;
   }
@@ -235,13 +235,13 @@ svg {
   span.l-disp-none-pc {
     display: inline !important;
   }
-  .l-disp-none-sp,
+
   br.l-disp-none-sp,
   span.l-disp-none-sp {
     display: none !important;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .l-disp-none-sp {
     display: block !important;
   }
@@ -295,7 +295,7 @@ svg {
   text-align: left;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .c-ttl-01 {
     margin-bottom: 26px;
     padding-top: 26px;
@@ -328,7 +328,7 @@ svg {
   padding: 0 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .c-sec-wrap {
     margin-top: 100px;
   }
@@ -347,7 +347,7 @@ svg {
   padding-top: 33px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .scrolloffset-sp {
     margin-top: 0;
     padding-top: 0;
@@ -368,7 +368,7 @@ svg {
 
 .u-ff-go-w6 {
   font-family: "Hiragino UD Sans W6 JIS2004", sans-serif;
-  /* font-weight: 700; */
+  font-weight: 700;
 }
 
 /* font color ++++++++++++++++ */
@@ -407,12 +407,6 @@ svg {
 
 .header .logo {
   float: left;
-  width: 150px;
-}
-
-.logo img {
-  height: 100%;
-  width: auto;
 }
 
 .header-koza {
@@ -491,7 +485,7 @@ svg {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .header {
     position: static;
     height: auto;
@@ -499,8 +493,9 @@ svg {
     padding: 18px 10px;
   }
 
-  .header .logo {
-    width: 240px;
+  .header .logo img {
+    margin-top: -13px;
+    height: 40px;
   }
 
   .header-koza {
@@ -526,10 +521,6 @@ svg {
 }
 
 @media screen and (min-width: 900px) {
-  .header-gmogropup {
-    font-size: 1.3rem;
-  }
-
   .header-koza-btn {
     width: 80px;
   }
@@ -581,7 +572,7 @@ svg {
   line-height: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .footer {
     margin-top: 70px;
   }
@@ -664,6 +655,7 @@ svg {
   font-size: 8.75vw; /* 28*100/320 */
   font-family: "TypelaboN Heavy";
   line-height: 1.14;
+  font-weight: 800;
 }
 
 .jumbotron .text-03 {
@@ -693,9 +685,25 @@ svg {
   font-size: 75px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
+  .header .logo img {
+    margin-top: -3px;
+    height: 30px;
+  }
+  .header-gmogropup {
+    display: none;
+  }
+
   .jumbotron-text {
-    font-size: 3rem;
+    height: 9vw;
+    font-size: 5vw;
+    line-height: 9vw;
+  }
+  .jumbotron-text-span {
+    font-size: 8vw;
+  }
+  .jumbotron {
+    padding-top: 60px;
   }
 }
 
@@ -716,7 +724,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .jumbotron-first {
     height: 460px;
     margin-top: 0;
@@ -806,14 +814,14 @@ svg {
 }
 
 .bnr-koza-btn-left-up {
-  padding-left: 50px;
-  font-size: 28px;
+  padding-left: 45px;
+  font-size: 25px;
   font-weight: 700;
 }
 .bnr-koza-btn-right {
   width: 70%;
-  padding-left: 4%;
-  font-size: 40px;
+  padding-left: 3.5%;
+  font-size: 32px;
   color: white;
   font-family: "Kosugi Maru", sans-serif;
   display: flex;
@@ -821,7 +829,7 @@ svg {
 }
 
 .bnr-koza-btn-right-hide {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .bnr-ekyc-text-note,
@@ -835,7 +843,7 @@ svg {
   color: #ed1f18;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .bnr-koza,
   .bnr-ekyc {
     max-width: 920px;
@@ -882,12 +890,14 @@ svg {
   display: block;
   width: 100%;
   height: 54px;
-  padding: 10px 20px 10px 54px;
+  padding: 0 20px 0 42px;
   background-color: #fff;
   color: #292c22;
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
 .local-nav li a:hover {
@@ -907,7 +917,7 @@ svg {
 }
 
 .local-nav li a::before {
-  left: 8px;
+  left: 0px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
@@ -936,7 +946,7 @@ svg {
   margin-top: -8px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .local-nav {
     max-width: 920px;
     margin: 10px auto;
@@ -954,14 +964,14 @@ svg {
   }
 
   .local-nav li a {
-    height: 82px;
-    padding: 14px 30px 14px 36%;
+    height: 75px;
+    padding: 0 25px 0 28%;
     font-size: 1.5rem;
     white-space: nowrap;
   }
 
   .local-nav li a::before {
-    left: 10px;
+    left: 3px;
     width: 26.66%;
     max-width: 60px;
     height: 60px;
@@ -978,7 +988,7 @@ svg {
 
 @media screen and (min-width: 900px) {
   .local-nav li a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1014,7 +1024,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .attention_box_blue {
     max-width: 900px;
     margin: 10px;
@@ -1184,7 +1194,7 @@ svg {
   letter-spacing: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .sec01 {
     max-width: 920px;
     margin-top: 30px;
@@ -1426,7 +1436,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .reason-point-ttl {
     margin-bottom: 24px;
     padding-left: 20px;
@@ -1605,7 +1615,7 @@ svg {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .tool-list {
     padding: 8px 8px 8px 12px;
     border-radius: 0;
@@ -1654,10 +1664,13 @@ svg {
   }
 
   .tool-pc .tool-list {
-    width: 258px;
+    width: 300px;
     height: 129px;
     margin-top: 16px;
-    background-image: url(../images/bg-sec03-pc-list.png);
+    /* background-image: url(../images/bg-sec03-pc-list.png); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   /* SP  ----*/
@@ -1782,7 +1795,7 @@ svg {
   margin-top: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   /* banking ----*/
   .banking .text-01 {
     margin: 25px auto;
@@ -1865,13 +1878,7 @@ svg {
   font-style: italic;
 }
 
-/* zeroyen ----*/
-/* .zeroyen-body {
-  margin: 12px auto;
-  margin-top: 15px;
-} */
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   /* support ----*/
   .support-body {
     min-height: 190px;
@@ -1897,32 +1904,9 @@ svg {
 
   .support-text {
     overflow: hidden;
-    width: 290px;
+    width: 320px;
     font-size: 1.6rem;
   }
-
-  /* zeroyen ----*/
-  /* .zeroyen {
-    margin-top: 50px;
-  }
-  
-  .zeroyen-body {
-    display: table;
-    margin: 30px 0;
-    margin-top: 15px;
-  }
-  .zeroyen-body p {
-    display: table-cell;
-  }
-  
-  .zeroyen-body p:nth-child(1) {
-    width: 37.77%;
-    max-width: 340px;
-  }
-  
-  .zeroyen-body p:nth-child(2) {
-    max-width: 560px;
-  } */
 }
 
 /* sec06
@@ -1981,7 +1965,7 @@ svg {
   font-size: 0.9rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .sec06 {
     overflow: hidden;
     margin-bottom: 70px;
@@ -2120,7 +2104,7 @@ svg {
   vertical-align: top;
 } */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .sec07 {
     overflow: hidden;
     margin-bottom: 70px;
@@ -2155,26 +2139,49 @@ svg {
     list-style: none;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .support-hdi {
     width: 95%;
   }
 }
 .bnr-ekyc-pic {
-  max-width: 920px;
+  position: relative;
+  width: 100%;
+  /* height: 260px; */
+  height: auto;
   margin: auto;
-  padding: 36px 140px 15px 45px;
-  background: url("../images/bnr-ekyc-fxop-pc.png") no-repeat;
+  /* padding: 36px 140px 15px 45px; */
+  /* background: url("../images/bnr-ekyc-fxop-pc.png") no-repeat; */
+}
+
+.bnr-ekyc-pic-h11 {
+  position: absolute;
+  top: 45px;
+  left: 70px;
+  bottom: 190px;
+}
+
+.bnr-ekyc-pic img {
+  /* position:absolute; */
 }
 
 .bnr-ekyc-pic-h2 {
-  padding-left: 250px;
+  position: absolute;
+  top: 35px;
+  left: 300px;
+  bottom: 180px;
 }
 
 .bnr-ekyc-pic-h2 h2 {
-  margin: auto;
+  /* margin: auto; */
   font-size: 28px;
   font-weight: 800;
+}
+
+.bnr-ekyc-pic-h1 {
+  position: absolute;
+  top: 80px;
+  left: 60px;
 }
 
 .bnr-ekyc-pic-h1 h1 {
@@ -2188,15 +2195,27 @@ svg {
   color: #f85325;
 }
 
+.bnr-ekyc-pic-h4 {
+  position: absolute;
+  top: 170px;
+  left: 60px;
+  right: 350px;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+}
+
 .bnr-ekyc-pic-h4 h4 {
-  font-size: 22px;
+  /* margin: auto; */
+  font-size: 30px;
   font-weight: 700;
 }
+
 .bnr-ekyc-sp {
   display: none;
 }
 .new_table-blue {
-  border: solid 2px #376e9d;
+  border: solid 3px #376e9d;
   border-radius: 3px;
   padding: 5px;
   background-color: #f6f6f6;
@@ -2222,10 +2241,13 @@ svg {
 }
 .zeroyen-body {
   display: flex;
+  justify-content: space-around;
   padding: 10px 0;
-  gap: 15px;
 }
 .zeroyen-body-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .zeroyen-body-first-title {
@@ -2233,22 +2255,36 @@ svg {
   font-weight: 800;
 }
 .zeroyen-body-first-content {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 500;
+  font-style: italic;
 }
-.zeroyen-body-third {
+
+.zeroyen-body-second {
   display: flex;
-  gap: 30px;
+  align-items: center;
+}
+
+.zeroyen-body-third {
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .zeroyen-body-third-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   font-size: 24px;
   font-weight: 500;
 }
-.zeroyen-body-third-content {
-  margin: 30px 0;
+
+.zeroyen-body-third-money {
 }
+/* .zeroyen-body-third-content {
+  margin: 30px 0;
+} */
 .icon_first::before {
   content: url("../images/icon-1.png");
   margin-right: 15px;
@@ -2290,7 +2326,38 @@ svg {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 769px) {
+
+@media screen and (max-width: 840px) {
+  .bnr-ekyc-pic-h11 {
+    top: 40px;
+    left: 65px;
+    /* bottom: 190px; */
+  }
+
+  .bnr-ekyc-pic-h2 {
+    top: 30px;
+    left: 270px;
+    /* bottom: 180px; */
+  }
+
+  .bnr-ekyc-pic-h1 {
+    position: absolute;
+    top: 70px;
+    left: 55px;
+  }
+
+  .bnr-ekyc-pic-h4 {
+    position: absolute;
+    top: 140px;
+    left: 55px;
+    right: 345px;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .header-koza-btn-img {
     width: 90px;
     height: 23px;
@@ -2369,10 +2436,28 @@ svg {
     display: none;
   }
   .zeroyen-body-first {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    font-style: italic;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    margin-bottom: 10px;
   }
+  .zeroyen-body-first-content {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .zeroyen-body-third {
+    display: flex;
+  }
+  .zeroyen-body-third-text {
+    width: 45%;
+  }
+  .zeroyen-body-third-money {
+    width: 55%;
+  }
+
   .ekyc_table_1 {
     background: url("../images/img-sec07-flow-step1-sp.png") no-repeat;
   }
@@ -2414,15 +2499,16 @@ svg {
     min-height: 210px;
   }
 }
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 470px) {
   .bnr-koza-btn-right {
     font-size: 8.2vw;
   }
   .bnr-koza-btn-left-up {
     font-size: 4vw;
   }
+
   .new_star--text__h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .new_star--text__h5 {
     font-size: 11px;

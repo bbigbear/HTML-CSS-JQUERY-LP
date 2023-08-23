@@ -1,6 +1,6 @@
 'use strict';
 
-var MEDIAQUERY = window.matchMedia('screen and (max-width: 767px)');
+var MEDIAQUERY = window.matchMedia('screen and (max-width: 768px)');
 
 // hide body
 if( !MEDIAQUERY.matches ) {
